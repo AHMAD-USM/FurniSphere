@@ -155,6 +155,32 @@ button a{
     grid-template-rows: repeat(6, 1fr);
     gap: 20px;
 }
+
+@media (max-width: 768px) {
+    .parent {
+      grid-template-columns: 1fr; /* stack cards in one column */
+      padding: 10px; /* reduce padding */
+      gap: 15px;
+    }
+  
+    .parent > div {
+      padding: 10px;
+    }
+  
+    .innie p {
+      font-size: 14px; /* adjust text size for small screens */
+    }
+  
+    .parent img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .last-btn button {
+      width: 100%; /* make button full width */
+    }
+  }
+  
     
 .div1 {
     grid-column: span 2 / span 2;
